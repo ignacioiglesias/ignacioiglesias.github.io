@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Juan Ignacio Iglesias</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      text-align: center;
+      background: #F2F2F2;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    #wrapper {
+      max-width: 720px;
+      margin: 10vh auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    .main {
+      margin-bottom: 25px;
+      clear: both;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-transform: uppercase;
+      line-height: 1.33;
+      color: #000;
+    }
+
+    h1 {
+      font-size: 2em;
+      line-height: 1.2;
+      margin-bottom: 2em;
+      text-align: right;
+    }
+
+    h1>.word {
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+      line-height: 1em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1em;
+    }
+
+    h5 {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+
+    a {
+      color: #000;
+      padding: 2px;
+      border-radius: 4px;
+    }
+
+    a[rel=external]:hover:after {
+      content: "\2192";
+      padding-right: 1px;
+    }
+
+    a:hover {
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    dt,
+    .company time,
+    span.present {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    #bio ul {
+      list-style-type: none;
+    }
+
+    .paper {
+      margin-bottom: 25px;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      border-radius: 3px;
+    }
+
+    .period {
+      font-size: .9em;
+      margin-bottom: 1em;
+    }
+
+    .position {
+      padding-bottom: 1em;
+      border-bottom: 2px dashed #f8f8f8;
+      margin-bottom: 1em;
+    }
+
+    .position:last-child {
+      border: none;
+      margin-bottom: 0;
+    }
+
+    hr {
+      border: none;
+      clear: both;
+    }
+
+    aside {
+      margin-bottom: 1em;
+      line-height: 1.5;
+    }
+
+    aside h5,
+    aside ul,
+    aside ul li {
+      display: inline-block;
+    }
+
+    aside ul li {
+      font-weight: bold;
+      font-size: .8em;
+    }
+
+    aside ul li:after {
+      content: ', ';
+    }
+
+    aside ul li:last-child:after {
+      content: '.';
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>
+        <span class="word">Juan</span>
+        <span class="word">Ignacio</span>
+        <span class="word">Iglesias</span>
+      </h1>
+    </header>
+    <div class="main" id="personalInfo">
+      <h2>Personal Data</h2>
+      <div id="bio" class="paper">
+        <dl>
+          <dt>Email:</dt>
+          <dd>iglesias.juanignacio@gmail.com</dd>
+          <dt>Phone:</dt>
+          <dd>
+            <ul>
+              <li>
+                <strong>skype:</strong> juanignacioiglesias
+              </li>
+              <li>
+                <strong>germany:</strong> +49 (157) 7802 6528
+              </li>
+            </ul>
+          </dd>
+          <dt>Birth:</dt>
+          <dd>
+            <time datetime="1988-07-23">
+              July 23<sup>rd</sup> , 1988
+            </time>
+          </dd>
+        </dl>
+        <dl>
+          <dt>GitHub:</dt>
+          <dd>
+            <a href="https://github.com/ignacioiglesias" rel="external">ignacioiglesias</a>
+        </dl>
+      </div>
+    </div>
+    <div class="main" id="objective">
+      <h2>Objective</h2>
+      <div class="paper">
+        <p>
+          I want to write useful software so that people spend less time in front of a computer and have more time for, instead,
+          <span id="activity">traveling</span>.
+        </p>
+        <p>I believe in minimalism and simplicity.</p>
+      </div>
+    </div>
+    <div class="main" id="experience">
+      <h2>Experience</h2>
+      <div class="company paper current">
+        <h3>RebelMouse</h3>
+        <div class="period">
+          <time datetime="2012-09-01">2012</time>
+          to
+          <span class="present">present</span> .
+
+        </div>
+        <div class="position">
+          <h4>Product Developer</h4>
+          <aside class="technologies">
+            <ul>
+              <li>ES6</li>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>Webpack</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Jest</li>
+              <li>Python</li>
+              <li>Django</li>
+            </ul>
+          </aside>
+          <p>Designed and implemented an extensible template editor that read RebelMouse's internal XML-based language and renders
+            its interface using React.</p>
+          <p>The tool enables non-technical users to AB test their site's responsive design using grids, inserting ad placements
+            and other types of widgets, keeping a version history, cloning, restoring and handling static content with a
+            drag and drop interface.</p>
+          <p>
+            Some of the sites using Rebelmouse are <a href="http://www.axios.com/">Axios</a>,
+            <a href="https://hub.united.com/">the United Airlines Hub</a> , <a href="http://www.papermag.com/">PaperMag</a>,
+            <a href="http://www.higherperspectives.com/">Higher Perspectives</a> and <a href="https://www.ecowatch.com/">Ecowatch</a>            .
+          </p>
+        </div>
+        <div class="position">
+          <h4>Senior Frontend Developer</h4>
+          <aside class="technologies">
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>jQuery</li>
+              <li>Backbone</li>
+              <li>AMD</li>
+              <li>Mustache</li>
+            </ul>
+          </aside>
+          <p>&laquo;RebelMouse organizes your social presence into a beautiful, dynamic and social site &raquo;</p>
+          <p>
+            You can think of RebelMouse as a realtime social-media driven CMS. My role consists on providing the internal logic of the
+            web client supporting both desktop and mobile devices. <em>And</em> IE8.
+          </p>
+          <p>
+            RebelMouse has been featured in a <a href="http://techcrunch.com/2013/08/02/rebelmouse-series-a/">variety</a>
+            <a href="http://mashable.com/2013/03/10/rebelmouse/">of</a>
+            <a href="http://www.theverge.com/2012/6/6/3067808/rebelmouse-social-dashboard-paul-berry-soho-labs-huffington-post-cto">sites</a>            and it is being used by <a href="http://apps.washingtonpost.com/g/page/local/red-light-camera-report/262/">The Washington Post</a>            ,
+            <a href="http://time100.time.com/2013/04/01/social-reactions-to-time-100/">Time</a> and <a href="http://www.fox.com/glee/socialhub/">Fox</a>            among others.
+          </p>
+        </div>
+      </div>
+      <div class="company paper past" id="wikimedia">
+        <h3>Wikimedia Argentina</h3>
+        <div class="period">
+          <time datetime="2015-01-01">2015</time>
+          to
+          <time datetime="2016-01-01">2016</time>
+        </div>
+        <div class="position">
+          <h4>Board Member</h4>
+          <p>Wikimedia Argentina (Asociación Civil Wikimedia Argentina in Spanish language) is a private non-profit association,
+            governed by the regulations of the Argentine Civil Code. It is an independent organization that serves as the
+            local Wikimedia chapter in Argentina.</p>
+          <p>Wikimedia Argentina's goals are to actively contribute to the diffusion, improvement and progress of the knowledge
+            and culture in the Argentine territory, especially thorough the promotion and support of the projects hosted
+            by the Wikimedia Foundation such as Wikipedia, Wikimedia Commons and Wikidata.</p>
+          <p>Wikimedia Argentina is also an affiliate organization of Creative Commons Argentina.</p>
+          <p>As a board member I helped organise programms and events related to public domain, human rights and the gender
+            gap in Wikipedia and other Wikimedia projects.</p>
+        </div>
+      </div>
+      <div class="company paper" id="bandOfCoders">
+        <h3>Band of Coders</h3>
+        <div class="period">
+          <time datetime="2009-03-01">2009</time>
+          to
+          <time datetime="2012-09-01">2012</time>
+          .
+
+        </div>
+        <div class="position">
+          <h4>Senior Frontend Developer</h4>
+          <aside class="technologies">
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>jQuery</li>
+            </ul>
+          </aside>
+          <p>Started working with an already established frontend team, part of my responsibilities had to do with creating
+            a non-intrusive javascript i18n module, reviewing and fixing existing code base and documenting the different
+            modules.
+          </p>
+        </div>
+        <div class="position">
+          <h4>Node.js developer:</h4>
+          <aside class="technologies">
+            <ul>
+              <li>Node.js</li>
+              <li>Expresso</li>
+              <li>Express</li>
+              <li>Socket.io</li>
+              <li>NPM</li>
+              <li>Mongo DB</li>
+              <li>Redis</li>
+            </ul>
+          </aside>
+          <p>Designed the architecture and leaded the development of a modular chat server based upon Node.js and Socket.io.
+            The application integrated with existing infrastructure and provided a rich user experience.
+          </p>
+          <p>It was designed to be easily turned into a distributed fault-tolerant service in order to scale at will using Redis.</p>
+          <p>Also, held several discussions on how to do non blocking programming and taught some Java developers the basics
+            of JavaScript and prototyped object oriented programming.</p>
+        </div>
+        <div class="position">
+          <h4>Senior frontend developer</h4>
+          <aside class="technologies">
+            <ul>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>xHTML</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+            </ul>
+          </aside>
+          <p>My role in the frontend team was to not only help in the refactoring process of an existing website but also to
+            empower the learning process of developers that didn't have any previous experience in Frontend development.</p>
+        </div>
+        <div class="position">
+          <h4>PHP based social network</h4>
+          <aside class="technologies">
+            <ul>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>Google Maps API</li>
+              <li>Sphinx</li>
+              <li>Zend Framework</li>
+              <li>jQuery</li>
+              <li>xHTML</li>
+            </ul>
+          </aside>
+          <p>Worked for 2+ years in the development and maintenance of a PHP, Zend framework based social network that was originally
+            built by another company. Part of my tasks were related to researching a poorly documented project while delivering
+            bug-fixes and new features.</p>
+        </div>
+        <div class="position">
+          <h4>Chrome Extensions</h4>
+          <aside class="technologies">
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Chrome API</li>
+            </ul>
+          </aside>
+          <p>I wrote a simple extension for that consumed the JSON-based API of an enterprise collaboration tool.</p>
+          <p>I designed and developed the frontend of a bookmarking tool that enables users to save notes about websites they
+            visit.
+          </p>
+        </div>
+        <div class="position">
+          <h4>Outlook AddIns</h4>
+          <aside class="technologies">
+            <ul>
+              <li>.NET Framework</li>
+              <li>Visual Studio</li>
+            </ul>
+          </aside>
+          <p>Wrote the integration of a collaborative enterprise tool with Outlook using Visual Studio for Office. </p>
+        </div>
+      </div>
+      <div class="company paper past" id="uxeng">
+        <h3>Uxeng</h3>
+        <div class="period">
+          <time datetime="2007-02-01">2007</time>
+          to
+          <time datetime="2009-03-01">2009</time>
+        </div>
+        <div class="position">
+          <h4>Interface designer</h4>
+          <aside class="technologies">
+            <ul>
+              <li>PHP</li>
+              <li>xHTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </aside>
+          <p>Took complex-and-not-so-efficient designs and made them simpler and cleaner.</p>
+        </div>
+        <div class="position">
+          <h4>PHP Developer</h4>
+          <aside class="technologies">
+            <ul>
+              <li>PHP</li>
+              <li>xHTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Google Base</li>
+            </ul>
+          </aside>
+          <p>Developed frontend designs and PHP functionality for Digital Business Ecosystems applications.</p>
+        </div>
+      </div>
+      <div class="company paper past" id="elPuente">
+        <h3>Dorina Vidoni</h3>
+        <div class="period">
+          <time datetime="2007-10-01">2007</time>
+          to
+          <time datetime="2008-03-01">2008</time>
+        </div>
+        <div class="position">
+          <h4>IT Department</h4>
+          <aside class="technologies">
+            <ul>
+              <li>VBA</li>
+              <li>Microsoft Access</li>
+            </ul>
+          </aside>
+          <p>Developed database systems in the Microsoft Access environment to manage the company contacts, print envelopes
+            an coordinate mailing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var timeoutId,
+        words = [
+          'traveling', 'painting', 'eating', 'running',
+          'making love', 'reading', 'hanging out',
+          'learning', 'sleeping', 'writing', 'biking',
+          'enjoying life'
+        ],
+        word,
+        cur = 0,
+        activity = document.getElementById('activity'),
+        wordDuration = 500,
+        letterDuration = 30;
+
+      function isElementInViewport(el) {
+        // note: this is soooo taken from StackOverflow
+        // https://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function rotateWords() {
+        if (timeoutId) {
+          clearInterval(timeoutId);
+        }
+        timeoutId = setTimeout(changeWord, wordDuration);
+      }
+
+      function changeWord() {
+        if (!isElementInViewport(activity)) {
+          return rotateWords();
+        }
+
+        activity.textContent = '';
+        word = words[cur]
+        var writeChar = function () {
+          if (activity.textContent.length < word.length) {
+            activity.textContent = word.substr(0, activity.textContent.length + 1);
+            setTimeout(writeChar, letterDuration);
+          } else {
+            cur = cur < words.length - 1 ? cur + 1 : 0;
+            rotateWords()
+          }
+        }
+        writeChar();
+      }
+      rotateWords()
+    }())
+  </script>
+</body>
+
+</html>
